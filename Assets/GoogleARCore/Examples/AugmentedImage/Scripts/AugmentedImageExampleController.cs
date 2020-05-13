@@ -50,9 +50,12 @@ namespace GoogleARCore.Examples.AugmentedImage
         /// The overlay containing the fit to scan user guide.
         /// </summary>
         public GameObject FitToScanOverlay;
+        public GameObject logo;
+        public GameObject menu;
+        public GameObject backButton;
+        public bool scanMode;
 
-        private Dictionary<int, AugmentedImageVisualizer> m_Visualizers
-            = new Dictionary<int, AugmentedImageVisualizer>();
+        private Dictionary<int, AugmentedImageVisualizer> m_Visualizers = new Dictionary<int, AugmentedImageVisualizer>();
 
         private List<AugmentedImage> m_TempAugmentedImages = new List<AugmentedImage>();
 
@@ -64,6 +67,11 @@ namespace GoogleARCore.Examples.AugmentedImage
             // Enable ARCore to target 60fps camera capture frame rate on supported devices.
             // Note, Application.targetFrameRate is ignored when QualitySettings.vSyncCount != 0.
             Application.targetFrameRate = 60;
+            logo.SetActive(true);
+            menu.SetActive(true);
+            backButton.SetActive(false);
+            //about.SetActive(true);
+            scanMode = false;
         }
 
         /// <summary>
@@ -131,7 +139,40 @@ namespace GoogleARCore.Examples.AugmentedImage
                 }
             }
 
-            FitToScanOverlay.SetActive(true);
+            if (scanMode == true)
+            {
+                FitToScanOverlay.SetActive(true);
+            }
+        }
+
+        public void goLearnPage()
+        {
+            scanMode = true;
+            logo.SetActive(false);
+            menu.SetActive(false);
+            backButton.SetActive(true);
+        }
+        public void goBack()
+        {
+            scanMode = false;
+            logo.SetActive(true);
+            menu.SetActive(true);
+            backButton.SetActive(false);
+            FitToScanOverlay.SetActive(false);
+        }
+
+        public void goAboutPage()
+        {
+            scanMode = false;
+            menu.SetActive(false);
+            backButton.SetActive(true);
+        }
+
+        public void goCategoriesPage()
+        {
+            scanMode = false;
+            menu.SetActive(false);
+            backButton.SetActive(true);
         }
     }
 }
