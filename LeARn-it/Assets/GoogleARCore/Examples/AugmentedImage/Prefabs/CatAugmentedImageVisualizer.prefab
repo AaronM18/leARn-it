@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 4190446996039166}
   - component: {fileID: 5999748297143186759}
   m_Layer: 0
-  m_Name: wordPrefab
+  m_Name: cat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

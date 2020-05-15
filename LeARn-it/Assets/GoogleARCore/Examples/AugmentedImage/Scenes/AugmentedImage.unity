@@ -2557,6 +2557,12 @@ MonoBehaviour:
   - {fileID: 114456719788833914, guid: 7cbbf9bf19e251a4bbc71c956f548ec0, type: 3}
   - {fileID: 114456719788833914, guid: 87ac6ed04fc69004fb21a1121b234b72, type: 3}
   - {fileID: 114456719788833914, guid: c1bf8509f30ba2847af3d38a46ffa1a6, type: 3}
+  - {fileID: 114456719788833914, guid: cb144ebb044686845acf4d502fd00e90, type: 3}
+  - {fileID: 114456719788833914, guid: f4ea2cd82096cc141915d9180e6c0405, type: 3}
+  - {fileID: 114456719788833914, guid: abffdfb0f0d46cd4794648817ecd4304, type: 3}
+  - {fileID: 114456719788833914, guid: d6875ac791a34d447ad6832ba81c0921, type: 3}
+  - {fileID: 114456719788833914, guid: 7c8438b73801b6a44baa753a8e665327, type: 3}
+  - {fileID: 114456719788833914, guid: e3cc829f4b0c1e54d8213385c8b2c918, type: 3}
   FitToScanOverlay: {fileID: 1622737808}
   logo: {fileID: 1057589235}
   menu: {fileID: 1230487504}

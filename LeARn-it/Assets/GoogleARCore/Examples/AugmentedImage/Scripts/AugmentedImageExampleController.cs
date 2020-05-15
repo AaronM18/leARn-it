@@ -172,6 +172,24 @@ namespace GoogleARCore.Examples.AugmentedImage
                 case "turtle":
                     setAugmentedImage(image, visualizer, prefabs[9]);
                     break;
+                case "deer":
+                    setAugmentedImage(image, visualizer, prefabs[10]);
+                    break;
+                case "dog":
+                    setAugmentedImage(image, visualizer, prefabs[11]);
+                    break;
+                case "fish":
+                    setAugmentedImage(image, visualizer, prefabs[12]);
+                    break;
+                case "kangaroo":
+                    setAugmentedImage(image, visualizer, prefabs[13]);
+                    break;
+                case "panda":
+                    setAugmentedImage(image, visualizer, prefabs[14]);
+                    break;
+                case "sheep":
+                    setAugmentedImage(image, visualizer, prefabs[15]);
+                    break;
                 default:
                     break;
             }
